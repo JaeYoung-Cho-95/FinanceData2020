@@ -475,44 +475,6 @@
     {
      "data": {
       "text/plain": [
-<<<<<<< HEAD
-       "array([[<matplotlib.axes._subplots.AxesSubplot object at 0x7fda508458d0>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda523e4160>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda5247ccf8>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda524b0c50>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda524e6eb8>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda52725160>],\n",
-       "       [<matplotlib.axes._subplots.AxesSubplot object at 0x7fda527573c8>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda5278b5f8>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda5278b668>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda527efb00>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda52824d68>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda5285afd0>],\n",
-       "       [<matplotlib.axes._subplots.AxesSubplot object at 0x7fda52898278>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda528c94e0>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda528fe748>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda52a309b0>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda52a64c18>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda52a98e80>],\n",
-       "       [<matplotlib.axes._subplots.AxesSubplot object at 0x7fda52ad9128>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda52b0c390>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda52b3f5f8>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda52b73860>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda52ba5ac8>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda52bdad30>],\n",
-       "       [<matplotlib.axes._subplots.AxesSubplot object at 0x7fda52c0ef98>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda52c4e240>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda52c7e4a8>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda52cb2710>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda52ce6978>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda52d19be0>],\n",
-       "       [<matplotlib.axes._subplots.AxesSubplot object at 0x7fda52d53748>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda52d84ac8>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda52db6e48>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda52df5208>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda52e23588>,\n",
-       "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fda52e57908>]],\n",
-=======
        "array([[<matplotlib.axes._subplots.AxesSubplot object at 0x7fb975918128>,\n",
        "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fb976d21e10>,\n",
        "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fb976dc50b8>,\n",
@@ -549,7 +511,6 @@
        "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fb97752d588>,\n",
        "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fb97755f908>,\n",
        "        <matplotlib.axes._subplots.AxesSubplot object at 0x7fb977590c88>]],\n",
->>>>>>> JaeYoung
        "      dtype=object)"
       ]
      },
@@ -972,268 +933,6 @@
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": 50,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "stock_19 = pd.concat((stock_1904,stock_1905),axis = 0)\n",
-    "\n",
-    "stock_19.sort_values('기준일자',inplace = True)\n",
-    "\n",
-    "stock_19.reset_index(drop=True)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 54,
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/html": [
-       "<div>\n",
-       "<style scoped>\n",
-       "    .dataframe tbody tr th:only-of-type {\n",
-       "        vertical-align: middle;\n",
-       "    }\n",
-       "\n",
-       "    .dataframe tbody tr th {\n",
-       "        vertical-align: top;\n",
-       "    }\n",
-       "\n",
-       "    .dataframe thead th {\n",
-       "        text-align: right;\n",
-       "    }\n",
-       "</style>\n",
-       "<table border=\"1\" class=\"dataframe\">\n",
-       "  <thead>\n",
-       "    <tr style=\"text-align: right;\">\n",
-       "      <th></th>\n",
-       "      <th>주식종목명</th>\n",
-       "      <th>기준일자</th>\n",
-       "      <th>주가순자산비율</th>\n",
-       "      <th>주가수익비율</th>\n",
-       "      <th>주가현금흐름비율</th>\n",
-       "      <th>주가매출비율</th>\n",
-       "      <th>매출액대비기업가치비율</th>\n",
-       "      <th>세전이익대비기업가치비율</th>\n",
-       "      <th>우편번호</th>\n",
-       "    </tr>\n",
-       "  </thead>\n",
-       "  <tbody>\n",
-       "    <tr>\n",
-       "      <th>0</th>\n",
-       "      <td>3S</td>\n",
-       "      <td>20190401</td>\n",
-       "      <td>3.10</td>\n",
-       "      <td>75.52</td>\n",
-       "      <td>37.33</td>\n",
-       "      <td>2.98</td>\n",
-       "      <td>3.15</td>\n",
-       "      <td>50.00</td>\n",
-       "      <td>8614.0</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>14461</th>\n",
-       "      <td>제이브이엠</td>\n",
-       "      <td>20190401</td>\n",
-       "      <td>1.68</td>\n",
-       "      <td>25.37</td>\n",
-       "      <td>10.40</td>\n",
-       "      <td>2.00</td>\n",
-       "      <td>2.00</td>\n",
-       "      <td>16.45</td>\n",
-       "      <td>42709.0</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>2939</th>\n",
-       "      <td>금비</td>\n",
-       "      <td>20190401</td>\n",
-       "      <td>0.44</td>\n",
-       "      <td>6.75</td>\n",
-       "      <td>4.01</td>\n",
-       "      <td>0.35</td>\n",
-       "      <td>0.43</td>\n",
-       "      <td>5.45</td>\n",
-       "      <td>17323.0</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>14474</th>\n",
-       "      <td>제이씨현시스템</td>\n",
-       "      <td>20190401</td>\n",
-       "      <td>1.16</td>\n",
-       "      <td>10.38</td>\n",
-       "      <td>28.49</td>\n",
-       "      <td>0.37</td>\n",
-       "      <td>0.36</td>\n",
-       "      <td>7.03</td>\n",
-       "      <td>4370.0</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>14487</th>\n",
-       "      <td>제이에스티나</td>\n",
-       "      <td>20190401</td>\n",
-       "      <td>1.41</td>\n",
-       "      <td>414.73</td>\n",
-       "      <td>10.81</td>\n",
-       "      <td>0.79</td>\n",
-       "      <td>0.91</td>\n",
-       "      <td>19.85</td>\n",
-       "      <td>5717.0</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>...</th>\n",
-       "      <td>...</td>\n",
-       "      <td>...</td>\n",
-       "      <td>...</td>\n",
-       "      <td>...</td>\n",
-       "      <td>...</td>\n",
-       "      <td>...</td>\n",
-       "      <td>...</td>\n",
-       "      <td>...</td>\n",
-       "      <td>...</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>8774</th>\n",
-       "      <td>서연</td>\n",
-       "      <td>20190531</td>\n",
-       "      <td>0.10</td>\n",
-       "      <td>-2.30</td>\n",
-       "      <td>1.85</td>\n",
-       "      <td>0.03</td>\n",
-       "      <td>0.28</td>\n",
-       "      <td>21.76</td>\n",
-       "      <td>14055.0</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>19060</th>\n",
-       "      <td>한화손해보험</td>\n",
-       "      <td>20190531</td>\n",
-       "      <td>0.34</td>\n",
-       "      <td>5.83</td>\n",
-       "      <td>0.67</td>\n",
-       "      <td>0.09</td>\n",
-       "      <td>0.09</td>\n",
-       "      <td>4.30</td>\n",
-       "      <td>7325.0</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>16866</th>\n",
-       "      <td>페이퍼코리아</td>\n",
-       "      <td>20190531</td>\n",
-       "      <td>2.86</td>\n",
-       "      <td>-2.09</td>\n",
-       "      <td>-4.02</td>\n",
-       "      <td>0.19</td>\n",
-       "      <td>1.14</td>\n",
-       "      <td>1247.64</td>\n",
-       "      <td>54003.0</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>8831</th>\n",
-       "      <td>서울리거</td>\n",
-       "      <td>20190531</td>\n",
-       "      <td>1.45</td>\n",
-       "      <td>-17.91</td>\n",
-       "      <td>-29.39</td>\n",
-       "      <td>3.96</td>\n",
-       "      <td>2.08</td>\n",
-       "      <td>-10.79</td>\n",
-       "      <td>6031.0</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>19978</th>\n",
-       "      <td>희림</td>\n",
-       "      <td>20190531</td>\n",
-       "      <td>1.16</td>\n",
-       "      <td>15.11</td>\n",
-       "      <td>4.74</td>\n",
-       "      <td>0.35</td>\n",
-       "      <td>0.43</td>\n",
-       "      <td>8.62</td>\n",
-       "      <td>5288.0</td>\n",
-       "    </tr>\n",
-       "  </tbody>\n",
-       "</table>\n",
-       "<p>39956 rows × 9 columns</p>\n",
-       "</div>"
-      ],
-      "text/plain": [
-       "         주식종목명      기준일자  주가순자산비율  주가수익비율  주가현금흐름비율  주가매출비율  매출액대비기업가치비율  \\\n",
-       "0           3S  20190401     3.10   75.52     37.33    2.98         3.15   \n",
-       "14461    제이브이엠  20190401     1.68   25.37     10.40    2.00         2.00   \n",
-       "2939        금비  20190401     0.44    6.75      4.01    0.35         0.43   \n",
-       "14474  제이씨현시스템  20190401     1.16   10.38     28.49    0.37         0.36   \n",
-       "14487   제이에스티나  20190401     1.41  414.73     10.81    0.79         0.91   \n",
-       "...        ...       ...      ...     ...       ...     ...          ...   \n",
-       "8774        서연  20190531     0.10   -2.30      1.85    0.03         0.28   \n",
-       "19060   한화손해보험  20190531     0.34    5.83      0.67    0.09         0.09   \n",
-       "16866   페이퍼코리아  20190531     2.86   -2.09     -4.02    0.19         1.14   \n",
-       "8831      서울리거  20190531     1.45  -17.91    -29.39    3.96         2.08   \n",
-       "19978       희림  20190531     1.16   15.11      4.74    0.35         0.43   \n",
-       "\n",
-       "       세전이익대비기업가치비율     우편번호  \n",
-       "0             50.00   8614.0  \n",
-       "14461         16.45  42709.0  \n",
-       "2939           5.45  17323.0  \n",
-       "14474          7.03   4370.0  \n",
-       "14487         19.85   5717.0  \n",
-       "...             ...      ...  \n",
-       "8774          21.76  14055.0  \n",
-       "19060          4.30   7325.0  \n",
-       "16866       1247.64  54003.0  \n",
-       "8831         -10.79   6031.0  \n",
-       "19978          8.62   5288.0  \n",
-       "\n",
-       "[39956 rows x 9 columns]"
-      ]
-     },
-     "execution_count": 54,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "stock_19"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
    "cell_type": "markdown",
    "metadata": {},
    "source": [
@@ -1248,46 +947,15 @@
    "source": [
     "issue = pd.read_csv('/Users/jaeyoungcho/Desktop/2020 금융 빅데이터 챌린지-공모전데이터/데이터/SBCN/이슈지표.csv',sep = ',',encoding='CP949')\n",
     "\n",
-    "issue.drop(['주식종목값','적재일시','센터코드','우편번호'],axis = 1, inplace = True)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 18,
-   "metadata": {},
-   "outputs": [],
-   "source": [
+    "issue.drop(['주식종목값','적재일시','센터코드','우편번호'],axis = 1, inplace = True)\n",
+    "\n",
     "issue.sort_values('기준일자',inplace = True)\n",
     "issue.reset_index(drop = True,inplace = True)"
    ]
   },
   {
    "cell_type": "code",
-<<<<<<< HEAD
-   "execution_count": 19,
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "\"[{'words': ['중공업', '부문', '대표', '시장', '효성', '기자', '언론사', '투자', '요코타', '타케시'], 'wordweights': [0.018466051667928696, 0.015128523111343384, 0.012888508848845959, 0.010632775723934174, 0.010620894841849804, 0.009518819861114025, 0.009518763981759548, 0.009513640776276588, 0.008404742926359177, 0.008404586464166641]}, {'words': ['효성', '중공업', '경제', '서울', '발행', '구독', '회사', '후', '지난해', '언론사'], 'wordweights': [0.037995949387550354, 0.021596180275082588, 0.012669474817812443, 0.011168180964887142, 0.008190617896616459, 0.006706791929900646, 0.006705764215439558, 0.006703658495098352, 0.0067010424099862576, 0.006693890318274498]}]\""
-      ]
-     },
-     "execution_count": 19,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "issue['이슈내용'][0]"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 20,
-=======
    "execution_count": 18,
->>>>>>> JaeYoung
    "metadata": {},
    "outputs": [
     {
@@ -1443,8 +1111,6 @@
    "cell_type": "code",
    "execution_count": 19,
    "metadata": {},
-<<<<<<< HEAD
-=======
    "outputs": [],
    "source": [
     "issue_2019 = issue.loc[issue['기준일자'] < 20200000]\n",
@@ -1464,127 +1130,20 @@
    "cell_type": "code",
    "execution_count": 76,
    "metadata": {},
->>>>>>> JaeYoung
    "outputs": [
     {
      "data": {
       "text/plain": [
-<<<<<<< HEAD
-       "\"[{'words': ['매수', '외국인', '자원', '생명', '미래', '없', '경제', '전일', '한국', '거래'], 'wordweights': [0.018082957714796066, 0.01808285340666771, 0.012055321596562862, 0.012053154408931732, 0.012052765116095543, 0.010857641696929932, 0.010806814767420292, 0.00945284403860569, 0.0094508808106184, 0.009447512216866016]}, {'words': ['사료', '수출', '중국', '미래', '생명', '자원', '동물', '수생', '배합', '있'], 'wordweights': [0.025925297290086746, 0.02431245520710945, 0.024074317887425423, 0.016512364149093628, 0.016512151807546616, 0.01651095412671566, 0.014489801600575447, 0.012013299390673637, 0.012012260034680367, 0.008483047597110271]}]\""
-      ]
-     },
-     "execution_count": 21,
-=======
        "\"[{'words': ['중공업', '부문', '대표', '시장', '효성', '기자', '언론사', '투자', '요코타', '타케시'], 'wordweights': [0.018466051667928696, 0.015128523111343384, 0.012888508848845959, 0.010632775723934174, 0.010620894841849804, 0.009518819861114025, 0.009518763981759548, 0.009513640776276588, 0.008404742926359177, 0.008404586464166641]}, {'words': ['효성', '중공업', '경제', '서울', '발행', '구독', '회사', '후', '지난해', '언론사'], 'wordweights': [0.037995949387550354, 0.021596180275082588, 0.012669474817812443, 0.011168180964887142, 0.008190617896616459, 0.006706791929900646, 0.006705764215439558, 0.006703658495098352, 0.0067010424099862576, 0.006693890318274498]}]\""
       ]
      },
      "execution_count": 76,
->>>>>>> JaeYoung
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-<<<<<<< HEAD
-    "issue['이슈내용'][50]"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 22,
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "\"[{'words': ['중공업', '부문', '대표', '시장', '효성', '기자', '언론사', '투자', '요코타', '타케시'], 'wordweights': [0.018466051667928696, 0.015128523111343384, 0.012888508848845959, 0.010632775723934174, 0.010620894841849804, 0.009518819861114025, 0.009518763981759548, 0.009513640776276588, 0.008404742926359177, 0.008404586464166641]}, {'words': ['효성', '중공업', '경제', '서울', '발행', '구독', '회사', '후', '지난해', '언론사'], 'wordweights': [0.037995949387550354, 0.021596180275082588, 0.012669474817812443, 0.011168180964887142, 0.008190617896616459, 0.006706791929900646, 0.006705764215439558, 0.006703658495098352, 0.0067010424099862576, 0.006693890318274498]}]\""
-      ]
-     },
-     "execution_count": 22,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "issue['이슈내용'][0]"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 23,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "issue_2019 = issue.loc[issue['기준일자'] < 20200000]\n",
-    "issue_2020 = issue.loc[issue['기준일자'] > 20200000]"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 24,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "temp = issue_2019['이슈내용']"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 25,
-   "metadata": {},
-   "outputs": [
-    {
-     "ename": "NameError",
-     "evalue": "name 'text_19' is not defined",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-      "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
-      "\u001b[0;32m<ipython-input-25-44e9c66e2b64>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mtext\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m' '\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mjoin\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mtext_19\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
-      "\u001b[0;31mNameError\u001b[0m: name 'text_19' is not defined"
-     ]
-    }
-   ],
-   "source": [
-    "text = ' '.join(text_19[0])"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "text"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "text_19 = []\n",
-    "for i,v in temp.items():\n",
-    "    text_19.append(v)\n",
-    "text_19"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "from wordcloud import WordCloud\n",
-    "wordcloud = WordCloud(max_font_size=50, max_words=100, background_color=\"white\").generate(issue_2019['이슈내용'])\n",
-    "plt.figure()\n",
-    "plt.imshow(wordcloud, interpolation=\"bilinear\")\n",
-    "plt.axis(\"off\")\n",
-    "plt.show()"
-=======
     "temp[0]"
->>>>>>> JaeYoung
    ]
   },
   {
